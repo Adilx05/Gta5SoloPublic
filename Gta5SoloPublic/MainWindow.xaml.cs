@@ -78,8 +78,6 @@ namespace Gta5SoloPublic
 
         private void ZamanlayiciIslemAsync(object source, ElapsedEventArgs a)
         {
-            
-
             foreach (var process in Process.GetProcessesByName("GTA5"))
                 process.Resume();
 
@@ -87,12 +85,6 @@ namespace Gta5SoloPublic
             {
                 this.ShowMessageAsync("Bilgi", "Solo Public Serverınız Açıldı", MessageDialogStyle.Affirmative);
             }));
-        }
-
-        
-        public void UpdateProgressBar(int value)
-        {
-            
         }
     }
 }
