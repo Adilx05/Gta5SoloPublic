@@ -7,9 +7,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gta5SoloPublic"
         mc:Ignorable="d"
-        Title="Gta 5 Solo Public" Height="200" Width="250" ResizeMode="CanMinimize" Icon="icon1_qTj_icon.ico">
+        Title="Gta 5 Solo Public" Height="250" Width="250" ResizeMode="CanMinimize" Icon="icon1_qTj_icon.ico" PreviewKeyDown="MetroWindow_PreviewKeyDown">
     <Grid>
         <Button Content="Server Aç" HorizontalAlignment="Left" Margin="80,39,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <ProgressBar HorizontalAlignment="Left" Height="10" Margin="22,100,0,0" VerticalAlignment="Top" Width="200" Name="Pb_Durum"/>
+        <Button Content="Tuş Kaydet" HorizontalAlignment="Left" Margin="47,133,0,0" VerticalAlignment="Top" Click="Button_Click_1" Background="Turquoise" Name="SaveBt"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="30,182,0,0" VerticalAlignment="Top" Name="SavedLabel"/>
+        <CheckBox Content="Kısayol Kullan" HorizontalAlignment="Left" Margin="125,138,0,0" VerticalAlignment="Top" Name="SzninItligi" Unchecked="SzninItligi_Unchecked" Checked="SzninItligi_Checked"/>
     </Grid>
 </Controls:MetroWindow>
